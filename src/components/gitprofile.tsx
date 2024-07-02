@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
-import axios, { AxiosError } from 'axios';
+import { AxiosError } from 'axios';
 import { formatDistance } from 'date-fns';
 import {
   CustomError,
