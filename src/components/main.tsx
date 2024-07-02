@@ -20,14 +20,16 @@ import ErrorPage from './error-page';
 import { DEFAULT_THEMES } from '../constants/default-themes';
 import { BG_COLOR } from '../constants';
 import Footer from './footer';
+import CodeEditor from "./code-editor";
+
 
 /**
- * Renders the GitProfile component.
+ * Renders the MainPage component.
  *
  * @param {Object} config - the configuration object
- * @return {JSX.Element} the rendered GitProfile component
+ * @return {JSX.Element} the rendered MainPage component
  */
-const GitProfile = ({ config }: { config: Config }) => {
+const MainPage = ({ config }: { config: Config }) => {
   const [sanitizedConfig] = useState<SanitizedConfig | Record<string, never>>(
     getSanitizedConfig(config),
   );
@@ -35,6 +37,7 @@ const GitProfile = ({ config }: { config: Config }) => {
   const [error, setError] = useState<CustomError | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
   const [profile, setProfile] = useState<Profile | null>(null);
+  
 
   const loadData = useCallback(async () => {
     try {
@@ -135,6 +138,11 @@ const GitProfile = ({ config }: { config: Config }) => {
                     />
                   </div>
                 </div>
+                <div className="lg:col-span-2 col-span-1 h-full">
+                  <div className="grid grid-cols-1 gap-6 h-full">
+                    <CodeEditor loading={loading} />
+                  </div>
+                </div>
               </div>
             </div>
             {sanitizedConfig.footer && (
@@ -153,4 +161,4 @@ const GitProfile = ({ config }: { config: Config }) => {
   );
 };
 
-export default GitProfile;
+export default MainPage;
