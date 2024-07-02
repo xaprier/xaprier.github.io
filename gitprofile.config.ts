@@ -11,8 +11,8 @@ const CONFIG = {
   },
   base: '/',
   seo: {
-    title: 'Portfolio of Seymen Kalkan',
-    description: 'This is the portfolio page of Seymen Kalkan. Developing C++, Qt projects and more.',
+    title: 'Seymen Kalkan',
+    description: 'This is the Seymen Kalkan\'s information webpage. You can refer to portfolio page and more.',
     imageURL: 'https://avatars.githubusercontent.com/u/69122856?v=4',
   },
   social: {
