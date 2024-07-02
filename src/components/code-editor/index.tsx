@@ -1,5 +1,5 @@
 import { skeleton } from '../../utils';
-import React from "react";
+import React, { useEffect } from "react";
 import Editor from '@monaco-editor/react';
 
 const languages = [
@@ -78,7 +78,7 @@ interface CodeEditorProps {
 const CodeEditor: React.FC<CodeEditorProps> = ({
   loading,
 }): JSX.Element => {
-  const [selectedLanguage, setSelectedLanguage] = React.useState<string>("c++");
+  const [selectedLanguage, setSelectedLanguage] = React.useState<string>("cpp");
   const [fontSize, setFontSize] = React.useState<number>(18);
 
   const handleChange = (event: any) => {
