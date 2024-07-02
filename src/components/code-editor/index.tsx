@@ -1,5 +1,5 @@
 import { skeleton } from '../../utils';
-import React, { useEffect } from "react";
+import React from "react";
 import Editor from '@monaco-editor/react';
 
 const languages = [
