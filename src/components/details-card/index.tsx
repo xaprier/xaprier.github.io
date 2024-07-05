@@ -197,7 +197,7 @@ const DetailsCard = ({ profile, loading, social }: Props) => {
                   icon={<SiGithub />}
                   title="GitHub:"
                   value={social.github}
-                  link={`https://www.researchgate.net/profile/${social.github}`}
+                  link={`https://github.com/${social.github}`}
                 />
               )}
               {social?.researchGate && (
