@@ -4,7 +4,7 @@ const CONFIG = {
   profile: {
     name: 'Seymen Kalkan',
     about: 'I\'m an experienced software developer with a strong background in C++, Linux and it\'s distributed operating systems. I specialize in Qt Core/GUI/Concurrent and am passionate about creating user-friendly interfaces. Additionally, I excel in developing optimized, high-performance applications.',
-    avatar: 'https://github.com/xaprier/portfolio/blob/build/avatar.jpeg?raw=true', // use another avatar image instead of github avatar
+    avatar: 'https://github.com/xaprier/portfolio/blob/main/public/avatar.jpeg?raw=true', // use another avatar image instead of github avatar
     nickname: 'xaprier',
     company: '',
     location: 'Ankara, Turkey',
