@@ -61,10 +61,10 @@ const siteConfig: SiteConfig = {
     rule: '-----------------',
     rows: [
       { key: 'OS', value: 'CachyOS Linux x86_64' },
-      { key: 'WM', value: 'Hyprland (caelestia-shell)' },
+      { key: 'WM', value: 'bspwm' },
       { key: 'CPU', value: 'Intel i5-9300H' },
       { key: 'GPU', value: 'NVIDIA GTX 1650 / Intel UHD 630' },
-      { key: 'Shell', value: 'fish + foot' },
+      { key: 'Shell', value: 'alacritty + zsh' },
     ],
     swatchColors: ['--red', '--peach', '--yellow', '--green', '--blue', '--mauve'],
   },
